@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- TITULO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ConversionPeso"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+
+        <!-- PANTALLA -->
+        <TextView
+            android:id="@+id/tvPantalla"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#1E1E1E"
+            android:text="0"
+            android:textSize="32sp"
+            android:textColor="#00FFAE"
+            android:gravity="end|center_vertical"
+            android:padding="15dp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- INPUT -->
+        <EditText
+            android:id="@+id/etValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese valor"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#00FFAE"/>
+
+        <!-- SPINNER ORIGEN -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convertir de:"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/spOrigen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- SPINNER DESTINO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convertir a:"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"/>
+
+        <Spinner
+            android:id="@+id/spDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- BOTONES CALCULADORA -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_marginTop="25dp">
+
+            <Button android:id="@+id/btn7" android:text="7" style="@style/btnCalc"/>
+            <Button android:id="@+id/btn8" android:text="8" style="@style/btnCalc"/>
+            <Button android:id="@+id/btn9" android:text="9" style="@style/btnCalc"/>
+
+            <Button android:id="@+id/btn4" android:text="4" style="@style/btnCalc"/>
+            <Button android:id="@+id/btn5" android:text="5" style="@style/btnCalc"/>
+            <Button android:id="@+id/btn6" android:text="6" style="@style/btnCalc"/>
+
+            <Button android:id="@+id/btn1" android:text="1" style="@style/btnCalc"/>
+            <Button android:id="@+id/btn2" android:text="2" style="@style/btnCalc"/>
+            <Button android:id="@+id/btn3" android:text="3" style="@style/btnCalc"/>
+
+            <Button android:id="@+id/btn0" android:text="0" style="@style/btnCalc"/>
+            <Button android:id="@+id/btnPunto" android:text="." style="@style/btnCalc"/>
+
+            <Button
+                android:id="@+id/btnConvertir"
+                android:text="="
+                style="@style/btnCalc"
+                android:backgroundTint="#00FFAE"/>
+        </GridLayout>
+
+        <!-- RESULTADO -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+
+        <!-- INTEGRANTES -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Integrantes: TuNombre, Compañero1"
+            android:textColor="#AAAAAA"
+            android:layout_marginTop="40dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>
