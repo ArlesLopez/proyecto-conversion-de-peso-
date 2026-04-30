@@ -56,7 +56,9 @@
         <Spinner
             android:id="@+id/spOrigen"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
 
         <!-- SPINNER DESTINO -->
         <TextView
@@ -70,6 +72,7 @@
             android:id="@+id/spDestino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+            android:background="@color/white"
 
         <!-- BOTONES CALCULADORA -->
         <GridLayout
@@ -115,7 +118,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Integrantes: TuNombre, Compañero1"
+            android:text="Integrantes: Arles Lopez , Anthoney Hernandes ,Yanellys Aguilar"
             android:textColor="#AAAAAA"
             android:layout_marginTop="40dp"
             android:gravity="center"/>
